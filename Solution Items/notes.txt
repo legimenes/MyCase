@@ -1,0 +1,11 @@
+Install-Package EntityFramework -Version 6.1.3
+Install-Package AutoMapper -Version 4.0.4
+
+* Migrations
+	Enable-Migrations
+	Add-Migration {migration_name}
+	Update-Database
+
+
+* Reference's links
+http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application

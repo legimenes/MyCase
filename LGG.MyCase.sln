@@ -5,6 +5,13 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGG.MyCase.Domain", "LGG.MyCase.Domain\LGG.MyCase.Domain.csproj", "{A7244566-76F8-4F45-9EA4-2750CF153760}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LGG.MyCase.Infra.Data", "LGG.MyCase.Infra.Data\LGG.MyCase.Infra.Data.csproj", "{F4D89BC4-E60D-4D9B-9080-DEF5F5D26A1A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{464683C7-1E59-4D62-8C98-40E2B406198F}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\notes.txt = Solution Items\notes.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{A7244566-76F8-4F45-9EA4-2750CF153760}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7244566-76F8-4F45-9EA4-2750CF153760}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7244566-76F8-4F45-9EA4-2750CF153760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4D89BC4-E60D-4D9B-9080-DEF5F5D26A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4D89BC4-E60D-4D9B-9080-DEF5F5D26A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4D89BC4-E60D-4D9B-9080-DEF5F5D26A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4D89BC4-E60D-4D9B-9080-DEF5F5D26A1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
