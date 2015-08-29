@@ -36,6 +36,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\GenreService.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\LGG.MyCase.Domain\LGG.MyCase.Domain.csproj">
+      <Project>{a7244566-76f8-4f45-9ea4-2750cf153760}</Project>
+      <Name>LGG.MyCase.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LGG.MyCase.SharedKernel\LGG.MyCase.SharedKernel.csproj">
+      <Project>{7043b1ca-8d09-4ed4-91da-9b0b36a77733}</Project>
+      <Name>LGG.MyCase.SharedKernel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
