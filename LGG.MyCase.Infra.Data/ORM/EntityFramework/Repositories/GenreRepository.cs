@@ -1,10 +1,11 @@
 ﻿using LGG.MyCase.Domain.Interfaces.Repositories;
 using LGG.MyCase.Domain.Models;
+using LGG.MyCase.Infra.Data.ORM.Context;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 
-namespace LGG.MyCase.Infra.Data.Repositories.EntityFramework
+namespace LGG.MyCase.Infra.Data.ORM.EntityFramework.Repositories
 {
     public class GenreRepository : IGenreRepository
     {
@@ -12,7 +13,7 @@ namespace LGG.MyCase.Infra.Data.Repositories.EntityFramework
 
         public GenreRepository(MyCaseContext context)
         {
-            _context = context;
+            _context = context;            
         }
 
         public IEnumerable<Genre> GetGenres()

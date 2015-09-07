@@ -1,7 +1,7 @@
 ﻿using LGG.MyCase.Domain.Models;
 using System.Data.Entity.ModelConfiguration;
 
-namespace LGG.MyCase.Data.Infra.Configurations.EntityFramework
+namespace LGG.MyCase.Data.Infra.Data.ORM.EntityFramework.Configuration
 {
     public class MusicConfiguration : EntityTypeConfiguration<Music>
     {

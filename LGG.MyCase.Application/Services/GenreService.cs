@@ -1,6 +1,7 @@
 ﻿using LGG.MyCase.Domain.Interfaces.Repositories;
 using LGG.MyCase.Domain.Interfaces.Services;
 using LGG.MyCase.Domain.Models;
+using LGG.MyCase.SharedKernel.Interfaces.Transaction;
 using LGG.MyCase.SharedKernel.Resources;
 using LGG.MyCase.SharedKernel.Validation;
 using System.Collections.Generic;
@@ -9,10 +10,12 @@ namespace LGG.MyCase.Application.Services
 {
     public class GenreService : IGenreService
     {
+        private readonly IUnitOfWork _unitOfWork;
         private readonly IGenreRepository _genreRepository;
 
-        public GenreService(IGenreRepository genreRepository)
+        public GenreService(IUnitOfWork unitOfWork, IGenreRepository genreRepository)
         {
+            _unitOfWork = unitOfWork;
             _genreRepository = genreRepository;
         }
 
@@ -38,6 +41,8 @@ namespace LGG.MyCase.Application.Services
                 _genreRepository.Create(genre);
             else
                 _genreRepository.Update(genre);
+
+            _unitOfWork.Commit();
         }
         public void Delete(Genre genre)
         {

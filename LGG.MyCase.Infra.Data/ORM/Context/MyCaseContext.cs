@@ -1,15 +1,17 @@
-﻿using LGG.MyCase.Data.Infra.Configurations.EntityFramework;
+﻿using LGG.MyCase.Data.Infra.Data.ORM.EntityFramework.Configuration;
 using LGG.MyCase.Domain.Models;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
-namespace LGG.MyCase.Infra.Data
+namespace LGG.MyCase.Infra.Data.ORM.Context
 {
     public class MyCaseContext : DbContext
     {
         public MyCaseContext()
             : base("MyCaseContext")
         {
+            Configuration.ProxyCreationEnabled = false;
+            Configuration.LazyLoadingEnabled = false;
         }
 
         public DbSet<Genre> Genres { get; set; }
