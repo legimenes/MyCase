@@ -1,4 +1,4 @@
-﻿namespace LGG.MyCase.Domain.Models
+﻿namespace LGG.MyCase.Domain.Entities
 {
     public class Style
     {

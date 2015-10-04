@@ -1,7 +1,7 @@
-﻿using LGG.MyCase.Domain.Models;
+﻿using LGG.MyCase.Domain.Entities;
 using System.Data.Entity.ModelConfiguration;
 
-namespace LGG.MyCase.Data.Infra.Data.ORM.EntityFramework.Configuration
+namespace LGG.MyCase.Data.Infra.Data.EntityFramework.Configuration
 {
     public class StyleConfiguration : EntityTypeConfiguration<Style>
     {

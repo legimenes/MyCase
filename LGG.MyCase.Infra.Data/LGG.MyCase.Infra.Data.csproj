@@ -46,13 +46,13 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ORM\EntityFramework\Configuration\ArtistConfiguration.cs" />
-    <Compile Include="ORM\EntityFramework\Configuration\GenreConfiguration.cs" />
-    <Compile Include="ORM\EntityFramework\Configuration\MusicConfiguration.cs" />
-    <Compile Include="ORM\EntityFramework\Configuration\StyleConfiguration.cs" />
-    <Compile Include="ORM\Context\MyCaseContext.cs" />
+    <Compile Include="Configuration\ArtistConfiguration.cs" />
+    <Compile Include="Configuration\GenreConfiguration.cs" />
+    <Compile Include="Configuration\MusicConfiguration.cs" />
+    <Compile Include="Configuration\StyleConfiguration.cs" />
+    <Compile Include="Context\MyCaseContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ORM\EntityFramework\Repositories\GenreRepository.cs" />
+    <Compile Include="Repositories\GenreRepository.cs" />
     <Compile Include="Transaction\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>

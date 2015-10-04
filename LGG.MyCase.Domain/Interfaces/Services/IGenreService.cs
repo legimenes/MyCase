@@ -1,4 +1,4 @@
-﻿using LGG.MyCase.Domain.Models;
+﻿using LGG.MyCase.Domain.Entities;
 using System;
 using System.Collections.Generic;
 

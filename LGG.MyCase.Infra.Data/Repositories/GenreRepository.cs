@@ -1,11 +1,11 @@
 ﻿using LGG.MyCase.Domain.Interfaces.Repositories;
-using LGG.MyCase.Domain.Models;
-using LGG.MyCase.Infra.Data.ORM.Context;
+using LGG.MyCase.Domain.Entities;
+using LGG.MyCase.Infra.Data.Context;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 
-namespace LGG.MyCase.Infra.Data.ORM.EntityFramework.Repositories
+namespace LGG.MyCase.Infra.Data.EntityFramework.Repositories
 {
     public class GenreRepository : IGenreRepository
     {

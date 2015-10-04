@@ -37,12 +37,12 @@
   <ItemGroup>
     <Compile Include="Interfaces\Repositories\IGenreRepository.cs" />
     <Compile Include="Interfaces\Services\IGenreService.cs" />
-    <Compile Include="Models\Artist.cs" />
-    <Compile Include="Models\Genre.cs" />
-    <Compile Include="Models\Music.cs" />
-    <Compile Include="Models\MusicArtist.cs" />
-    <Compile Include="Models\MusicStyle.cs" />
-    <Compile Include="Models\Style.cs" />
+    <Compile Include="Entities\Artist.cs" />
+    <Compile Include="Entities\Genre.cs" />
+    <Compile Include="Entities\Music.cs" />
+    <Compile Include="Entities\MusicArtist.cs" />
+    <Compile Include="Entities\MusicStyle.cs" />
+    <Compile Include="Entities\Style.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,8 +1,8 @@
 ﻿using LGG.MyCase.Application.Services;
 using LGG.MyCase.Domain.Interfaces.Repositories;
 using LGG.MyCase.Domain.Interfaces.Services;
-using LGG.MyCase.Infra.Data.ORM.Context;
-using LGG.MyCase.Infra.Data.ORM.EntityFramework.Repositories;
+using LGG.MyCase.Infra.Data.Context;
+using LGG.MyCase.Infra.Data.EntityFramework.Repositories;
 using LGG.MyCase.Infra.Data.Transaction;
 using LGG.MyCase.SharedKernel.Interfaces.Transaction;
 using Microsoft.Practices.Unity;

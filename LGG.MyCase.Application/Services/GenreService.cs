@@ -1,6 +1,6 @@
 ﻿using LGG.MyCase.Domain.Interfaces.Repositories;
 using LGG.MyCase.Domain.Interfaces.Services;
-using LGG.MyCase.Domain.Models;
+using LGG.MyCase.Domain.Entities;
 using LGG.MyCase.SharedKernel.Interfaces.Transaction;
 using LGG.MyCase.SharedKernel.Resources;
 using LGG.MyCase.SharedKernel.Validation;

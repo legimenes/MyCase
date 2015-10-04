@@ -1,9 +1,9 @@
-﻿using LGG.MyCase.Data.Infra.Data.ORM.EntityFramework.Configuration;
-using LGG.MyCase.Domain.Models;
+﻿using LGG.MyCase.Data.Infra.Data.EntityFramework.Configuration;
+using LGG.MyCase.Domain.Entities;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
-namespace LGG.MyCase.Infra.Data.ORM.Context
+namespace LGG.MyCase.Infra.Data.Context
 {
     public class MyCaseContext : DbContext
     {

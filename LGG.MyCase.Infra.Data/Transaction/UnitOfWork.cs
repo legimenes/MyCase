@@ -1,4 +1,4 @@
-﻿using LGG.MyCase.Infra.Data.ORM.Context;
+﻿using LGG.MyCase.Infra.Data.Context;
 using LGG.MyCase.SharedKernel.Interfaces.Transaction;
 
 namespace LGG.MyCase.Infra.Data.Transaction

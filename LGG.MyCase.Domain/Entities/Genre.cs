@@ -2,7 +2,7 @@
 using LGG.MyCase.SharedKernel.Validation;
 using System.Collections.Generic;
 
-namespace LGG.MyCase.Domain.Models
+namespace LGG.MyCase.Domain.Entities
 {
     public class Genre
     {
