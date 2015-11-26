@@ -1,6 +1,5 @@
-﻿using LGG.MyCase.SharedKernel.Resources;
-using LGG.MyCase.SharedKernel.Validation;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using LGG.MyCase.Domain.Scopes;
 
 namespace LGG.MyCase.Domain.Entities
 {
@@ -10,9 +9,13 @@ namespace LGG.MyCase.Domain.Entities
         public string Description { get; set; }
         public virtual ICollection<Style> Styles { get; set; }
 
-        public void Validate()
+        public Genre()
         {
-            AssertionConcern.AssertArgumentNotEmpty(this.Description, Errors.EmptyGenreDescription);
+        }
+
+        public bool Save()
+        {
+            return this.SaveScopeIsValid();
         }
     }
 }

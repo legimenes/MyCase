@@ -61,6 +61,33 @@ namespace LGG.MyCase.SharedKernel.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Artist description already exists..
+        /// </summary>
+        public static string ArtistDescriptionExists {
+            get {
+                return ResourceManager.GetString("ArtistDescriptionExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Artist not found..
+        /// </summary>
+        public static string ArtistNotFound {
+            get {
+                return ResourceManager.GetString("ArtistNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Artist description is empty..
+        /// </summary>
+        public static string EmptyArtistDescription {
+            get {
+                return ResourceManager.GetString("EmptyArtistDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Genre description is empty..
         /// </summary>
         public static string EmptyGenreDescription {

@@ -1,4 +1,4 @@
-﻿using LGG.MyCase.Domain.Interfaces.Repositories;
+﻿using LGG.MyCase.Domain.Contracts.Repositories;
 using LGG.MyCase.Domain.Entities;
 using LGG.MyCase.Infra.Data.Context;
 using System.Collections.Generic;
@@ -28,17 +28,20 @@ namespace LGG.MyCase.Infra.Data.EntityFramework.Repositories
         {
             return _context.Genres.Any(g => g.Description.ToLower() == description.ToLower() && g.Id != id);
         }
-        public void Create(Genre genre)
+        public bool Create(Genre genre)
         {
             _context.Genres.Add(genre);
+            return true;
         }
-        public void Update(Genre genre)
+        public bool Update(Genre genre)
         {
             _context.Entry<Genre>(genre).State = EntityState.Modified;
+            return true;
         }
-        public void Delete(Genre genre)
+        public bool Delete(Genre genre)
         {
             _context.Entry<Genre>(genre).State = EntityState.Deleted;
+            return true;
         }
         public void Dispose()
         {

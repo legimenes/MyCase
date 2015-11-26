@@ -35,8 +35,9 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\Repositories\IGenreRepository.cs" />
-    <Compile Include="Interfaces\Services\IGenreService.cs" />
+    <Compile Include="Contracts\AppServices\IGenreAppService.cs" />
+    <Compile Include="Contracts\Repositories\IGenreRepository.cs" />
+    <Compile Include="Contracts\Services\IGenreService.cs" />
     <Compile Include="Entities\Artist.cs" />
     <Compile Include="Entities\Genre.cs" />
     <Compile Include="Entities\Music.cs" />
@@ -44,6 +45,9 @@
     <Compile Include="Entities\MusicStyle.cs" />
     <Compile Include="Entities\Style.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scopes\GenrePersistenceScope.cs" />
+    <Compile Include="Scopes\GenreScopes.cs" />
+    <Compile Include="Services\GenreService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LGG.MyCase.SharedKernel\LGG.MyCase.SharedKernel.csproj">

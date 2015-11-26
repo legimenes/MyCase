@@ -2,13 +2,13 @@
 using System;
 using System.Collections.Generic;
 
-namespace LGG.MyCase.Domain.Interfaces.Services
+namespace LGG.MyCase.Domain.Contracts.Services
 {
     public interface IGenreService : IDisposable
     {
+        //Genre GetGenre(int id);
+        bool Save(Genre genre);
         IEnumerable<Genre> GetGenres();
-        Genre GetGenre(int id);
-        void Save(Genre genre);
-        void Delete(Genre genre);
+        //bool Delete(Genre genre);
     }
 }

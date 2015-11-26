@@ -1,6 +1,7 @@
 Install-Package EntityFramework -Version 6.1.3
 Install-Package AutoMapper -Version 4.0.4
 Install-Package Unity -Version 3.5.1404.0
+Install-Package Moq -Version 4.2.1510.2205
 
 * Migrations
 	Enable-Migrations

@@ -2,15 +2,15 @@
 using System;
 using System.Collections.Generic;
 
-namespace LGG.MyCase.Domain.Interfaces.Repositories
+namespace LGG.MyCase.Domain.Contracts.Repositories
 {
     public interface IGenreRepository : IDisposable
     {
         IEnumerable<Genre> GetGenres();
         Genre GetGenre(int id);
         bool GenreExists(int id, string description);
-        void Create(Genre genre);
-        void Update(Genre genre);
-        void Delete(Genre genre);
+        bool Create(Genre genre);
+        bool Update(Genre genre);
+        bool Delete(Genre genre);
     }
 }
