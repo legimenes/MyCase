@@ -30,7 +30,7 @@ namespace LGG.MyCase.Application.Services
             _genreService.Save(genre);
 
             if (!_notifications.HasNotifications())
-                _unitOfWork.Commit();            
+                _unitOfWork.Commit();
 
             return _notifications.HasNotifications();
         }

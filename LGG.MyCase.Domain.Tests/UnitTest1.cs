@@ -1,4 +1,5 @@
-﻿using LGG.MyCase.Domain.Contracts.Repositories;
+﻿using LGG.MyCase.Domain.Contracts.AppServices;
+using LGG.MyCase.Domain.Contracts.Repositories;
 using LGG.MyCase.Domain.Contracts.Services;
 using LGG.MyCase.Domain.Entities;
 using LGG.MyCase.SharedKernel.DomainNotificationHelper;
@@ -52,6 +53,30 @@ namespace LGG.MyCase.Domain.Tests
             genreService.Save(genre);
 
             IEnumerable<Genre> genres = genreService.GetGenres();
+
+            if (notifications.HasNotifications())
+            {
+            }
+            else
+            {
+            }
+        }
+
+        [TestMethod]
+        public void TestFull()
+        {
+            var container = new UnityContainer();
+            DI.Startup.Configuration(container);
+            IHandler<DomainNotification> notifications = DomainEvent.Container.GetService<IHandler<DomainNotification>>();
+
+            Genre genre = new Genre()
+            {
+                Id = 0,
+                Description = "Rock"
+            };
+
+            IGenreAppService service = container.Resolve<IGenreAppService>();
+            service.Save(genre);
 
             if (notifications.HasNotifications())
             {

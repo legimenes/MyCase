@@ -7,6 +7,7 @@ namespace LGG.MyCase.Data.Infra.Data.EntityFramework.Configuration
     {
         public GenreConfiguration()
         {
+            ToTable("genres");
             Property(p => p.Description)
                 .HasMaxLength(30)
                 .IsRequired();
